@@ -27,4 +27,9 @@
             </many-to-many>
         </set>
     </class>
+    <query name="findAllProfesores"><![CDATA[
+
+SELECT p FROM Profesor p
+
+]]></query>
 </hibernate-mapping>

@@ -132,15 +132,17 @@ public class Main {
 			}
 		}
 
-		{
-			System.out.println("----------- Q12: Simple consulta con HQL -----------");
-			List<Ciclo> ciclos = session.createQuery("SELECT c FROM Ciclo c ORDER BY c.nombre").list();
+//		{
+//			System.out.println("----------- Q12: Simple consulta con HQL -----------");
+//			List<Ciclo> ciclos = session.createQuery("SELECT c FROM Ciclo c ORDER BY c.nombre").list();
+//
+//			for (Ciclo ciclo : ciclos) {
+//				System.out.println(ciclo.toString());
+//			}
+//
+//		}
 
-			for (Ciclo ciclo : ciclos) {
-				System.out.println(ciclo.toString());
-			}
 
-		}
 
 		{
 			System.out.println("----------- Q13: Uso de AND y OR -----------");

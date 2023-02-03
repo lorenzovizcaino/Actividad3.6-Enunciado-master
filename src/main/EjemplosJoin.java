@@ -21,7 +21,8 @@ public class EjemplosJoin {
 			System.out.println("----------- Q1: Uso de cross join: Cada fila de una tabla combinada con todas las filas de la otra tabla -----------");
 
 			List<Object[]> datos = session.createQuery(
-					" select p.nombre, p.ape1, p.ape2, m.nombre FROM Profesor p, Modulo m ")
+					//" select p.nombre, p.ape1, p.ape2, m.nombre FROM Profesor p, Modulo m ")
+					" select p.nombre, p.ape1, p.ape2, m.nombre FROM Profesor p  join p.modulos m ") //nos dice que modulos imparten los profesores
 					.list();
 
 			for (Object[] fila : datos) {
