@@ -12,6 +12,7 @@
         <property name="hibernate.hbm2ddl.auto">none</property>
         <property name="hibernate.search.autoregister_listeners">true</property>
         <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="modelo/Cicloformativo.hbm.xml"/>
         <mapping resource="modelo/Direccion.hbm.xml"/>
         <mapping resource="modelo/Profesor.hbm.xml"/>
         <mapping resource="modelo/ComunidadAutonoma.hbm.xml"/>
